@@ -1,0 +1,144 @@
+hr {
+    margin:20px 0px ;
+}
+body {
+    font-family: sans-serif;
+}
+.A1 {
+    text-align: center;
+}
+.A1 div {   
+    counter-increment: number;
+    display: inline-block;
+    position: relative;
+    margin: 20px ;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    color: black;
+    background-color: #EEE;
+    border: 3px black solid;
+    box-shadow: 6px 5px 0px 0px #2196f3, -6px -5px 0 0 #e91e63;
+}
+.A1 div::before {
+    content:counter(number);
+    position: absolute;
+    text-align: center ;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+    padding: 1px 5px;
+    top: -11px;
+    left: calc(50% - 9px);
+}
+.A1 div::after {
+    content: "Element" ;
+    position: absolute;
+    top: calc(50% - 9px);
+    left: calc(50% - 29px);
+}
+.A2 div {
+    margin: auto;
+    width: 100px;
+    height: 100px;
+    background-color: #dddddd;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 7px 20px;
+    border-bottom-right-radius: 7px 20px;
+    border-bottom-left-radius: 50%;
+    box-shadow: 0px 0px 12px 0px black inset;
+}
+.A3 {
+    width: 550px;
+    margin: auto;
+}
+.A3 hr {
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    height: 300px;
+    margin: 0px 20px;
+    width: 0;
+    background-color: #2196f3;
+    color: #2196f3;
+    border-left: #2196f3 1px solid;
+    border-right: transparent 1px solid;
+    border-bottom: transparent 1px solid;
+    border-top: transparent 1px solid;
+}
+.A3 hr::after {
+    position: absolute;
+    display: inline-block;
+    content :"or";
+    top: calc(50% - 12px);
+    background-color: #2196f3;
+    border-radius: 50%;
+    padding: 3px;
+    color: white;
+}
+.A3{
+    width: : 550px;
+    position: relative;
+}
+.A3 .f1 {
+    display: inline-block;
+    position: absolute;
+    margin: 0px;
+    background-color: #EEE;
+    height: 300px;
+    width: 260px;
+}
+.A3 .f1 .Basic {
+    display: block;
+    font-weight: bold;
+    background-color: #03a9f4;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 8px 80px;
+    margin: 20px 30px;
+}
+.A3 .f1 .Free {
+    display: block;
+    background-color: #dddddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    line-height: 200px;
+    font-size: xx-large;
+    margin: auto auto;
+} 
+.A3 .f2 {
+    display: inline-block;
+    position: absolute;
+    right: -42px;
+    margin: 0px;
+    background-color: #EEE;
+    height: 300px;
+    width: 260px;
+}
+
+.A3 .f2 .Pro {
+    display: block;
+    font-weight: bold;
+    background-color: #03a9f4;
+    color: white;
+    border-radius: 7px;
+    text-align: center;
+    padding: 8px 80px;
+    margin: 20px 30px;
+}
+.A3 .f2 .mo {
+    display: block;
+    background-color: #dddddd;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: black;
+    text-align: center;
+    line-height: 200px;
+    font-size: xx-large;
+    margin: auto auto;
+} 

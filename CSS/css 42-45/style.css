@@ -1,0 +1,67 @@
+:root {
+    --mainColor: #009688;
+    --mainPadding: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+.A1 {
+    background-color: #eee;
+    width: 400px;
+    height: 200px;
+    transition: all .5s ease;
+    margin: 30px  auto;
+    text-transform: capitalize;
+}
+.A1:hover {
+    margin-top: 0px;
+    .s {
+        margin-top: 20px;
+    }
+}
+.A1 .f {
+padding: 20px 82px;
+}
+.A1 .s {
+    padding: 20px 30px;
+    background-color: #ddd;
+    margin: 0px 10px;  
+    text-align: center;
+    transition: all .5s .5s ease;
+}
+.A2 div {
+    text-indent: 0px;
+    position: relative;
+    white-space: nowrap;
+    margin: 20px auto !important;
+    background-color: #eee !important;
+    color: #eee !important;
+    width: 400px !important;
+    padding: 0px 80px !important;
+    border: none !important;
+}
+.A2 div::selection{
+    color: #eee;
+}
+.f1::before {
+    content: 'Elzero';
+    font-size: 20px !important;
+    display: block;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: absolute;
+    top: calc(50% - 21px);
+    left: calc(50% - 40px);
+    color: black;
+    padding: 10px;
+}
+
+.A3 div {
+    font-family: sans-serif;
+    color: var(--mainColor , red);
+    border: var(--mainColor , black ) 3px solid;
+    padding: var(--mainPadding , 10px);
+    width: 400px;
+    margin: 20px auto;
+}

@@ -1,0 +1,43 @@
+body 
+.assiment1 div {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    background-color: whitesmoke;
+    font-weight: bold;
+    outline: 5px black solid;
+}
+.assiment1-shape1 {
+    border: 5px red solid;
+}
+.assiment1-shape2 {
+    border-color: blue green;
+    border-width: 5px;
+    border-style: solid;
+}
+.assiment1-shape3 {
+    border-color: red green blue yellow;
+    border-width: 5px;
+    border-style: dashed;
+}
+hr {
+    margin: 20px 0px
+}
+.assiment2 div {
+    width: 400px;
+    background-color: whitesmoke;
+    margin: 20px;
+    padding: 10px;
+    display: block;
+    outline: 10px whitesmoke solid;
+}
+.assiment2 .element-element-1 {
+    border-left: 5px red solid;
+}
+
+.assiment2 .element-element-2 {
+    visibility: hidden;
+}
+.assiment2 .element-element-3 {
+    border-left: 5px green solid;
+}

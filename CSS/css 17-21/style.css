@@ -1,0 +1,45 @@
+hr {
+    margin: 20px 0;
+}
+body { 
+    font: 1em sans-serif;
+}
+.A1 .assiment1 {
+    font: 1em sans-serif;
+    font-size: xx-large;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 0px #f44336 , 1.5px 1.5px 0px #3781e7 ,  2px 2px 0px #982ab1    
+}
+.A2 .one {
+    text-transform: uppercase;
+}
+.A2 .two {
+    text-transform: capitalize;
+}
+.A2 .three {
+    text-transform: lowercase;
+}
+.A3 div {
+    background-color: whitesmoke;
+    padding: 20px;
+    width: 400px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.A4 {
+    text-align: center;
+}
+.A4 a {
+    display: inline-block;
+    width: fit-content;
+    background-color: #009688;
+    border-bottom: 6px #00514a solid ;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}

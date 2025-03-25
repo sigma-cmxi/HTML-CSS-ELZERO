@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+hr {
+    margin: 20px 0;
+}
+.A1 div.main.red {
+    color: red;
+}
+.A2 div.parent div.child:nth-child(2) {
+    color: red;
+}
+.A3 div.parent > div:only-child {
+    color: red;
+}
+.A4 > div[title]:not(.no-need) {
+    color: red;
+}
+.A5 div:nth-of-type(2) div {
+    color: red ;
+}
+.A6 div:first-of-type div:nth-of-type(3) , 
+.A6 div:nth-of-type(2) div:nth-of-type(4) {
+    color: red;
+}
+.A7 div:first-child  div:nth-of-type(2){
+    color: red;
+}
+.A8 div :not(h3 , :first-child , :last-child) {
+    color: red;
+}

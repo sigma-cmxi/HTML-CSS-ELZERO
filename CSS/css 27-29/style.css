@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+hr {
+    margin: 0 20px;
+}
+.A1 {
+    width: 800px;
+    background-color: #eeeeee;
+    padding: 0;
+    margin:  auto;
+}
+.A1 .fw {
+    margin: 15px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #dddddd;
+    float: left;
+    width: calc(100% - 30px);
+}
+.A1  .f13 {
+    margin-top: 0;
+    margin-left: 15px;
+    padding: 20px 0;
+    text-align: center;
+    background-color:#dddddd;
+    float: left;
+    width: calc((100% - 60px) / 3 );
+}
+.A1 .f12 {
+    margin-top: 15px;
+    margin-left: 15px;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #dddddd;
+    float: left;
+    width: calc((100% - 45px) / 2 );
+}
+.A1 .f14 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding: 20px 0;
+    text-align: center;
+    background-color:#dddddd;
+    float: left;
+    width: calc((100% - 75px) / 4 );
+}
+.clear {
+    clear: both;
+}
+.A2 div {
+    margin: 20px auto;
+    width: 300px;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    color: black;
+}
+.A2 div.normal {
+    background-color: #b3b3b3;
+}
+.A2 div.one {
+    background-color: rgba(247,247,247,0.1)
+}
+.A2 div.two {
+    background-color: #b3b3b3;
+    opacity: 0.1;
+}

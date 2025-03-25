@@ -1,0 +1,51 @@
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 50%;
+    top: 50% ;
+    transform: translate(50% , 50%);
+}
+.center-position {
+    align-self: center;
+    justify-self: center;
+}
+.circle-100 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.circle-200 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+.A1 div {
+    position: relative;
+    background-color: #ddd;
+    width: 300px;
+    padding: 15px;
+    margin: 20px auto;
+}
+.arrow::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.top.arrow::before {
+    top: 15%;
+}
+.right.arrow::before {
+    left: 98%;
+}
+.bottom.arrow::before {
+    top: 85%;
+}
+.left.arrow::before {
+left: 2%;
+}

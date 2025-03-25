@@ -1,0 +1,291 @@
+* {
+    --color: black;
+    --backg-color:#ddd;
+}
+html {
+    font-family: sans-serif;
+}
+hr {
+    margin: 20px 0;
+}
+.A1 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 5px 0px 0 #ff5722, -5px 0 0 #03a9f4;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    color: #ff5722;
+    font-weight: bold;
+} 
+.A2 .parent {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 600px;
+    height: 300px;
+    background-color: #eeeeee;
+    align-content: space-between;
+}
+
+.A2 .parent div {
+    flex-basis: calc(90% / 3);
+    text-align: center;
+    height: 34px;
+    margin: 10px 0; 
+    line-height: 34px;
+    color: white;
+    background-color: #f44336;
+}
+.A3 .parent {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    align-content: flex-start;
+    justify-content: space-around;
+}
+.A3 .parent div {
+    flex-basis: calc(94% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #607d8b;
+    text-align: center;
+    color: white;
+}
+.A3 .six ,
+.A3 .three,
+.A3 .four {
+    margin-top: 10px;
+} 
+.A3 .one ,
+.A3 .two ,
+.A3 .five {
+    margin-bottom: 10px;
+}
+
+.A3 .one {
+    align-self: flex-end;
+    height:calc(15% - 10px);
+    order: 6;
+}
+.A3 .two {
+    height:calc(50% - 10px);
+    order: 5;
+}
+.A3 .three {
+    height:calc(15% - 10px);
+    order: 2;
+}   
+.A3 .four {
+    height:calc(50% - 10px);
+    order: 3;
+}
+.A3 .five {
+    height:calc(50% - 10px);
+    order: 4;
+
+}
+.A3 .six {
+    height:calc(50% - 10px);
+    order: 1;
+}
+.A4 .parent {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.A4 .parent div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #009688;
+    color: white;
+
+}
+.A4 .parent .one {
+    width: 5%;
+    flex-basis: 80px;
+    align-self: flex-end;
+    margin: 10px 10px 0 0 ;
+}
+.A4 .parent .two {
+    align-self: flex-start;
+    flex-basis: 80px;
+    width: 50%;
+    margin-left: 10px;
+}
+.A4 .parent .three {
+    width: 5%;
+    align-self: flex-end;
+    flex-basis: 80px;
+    margin: 0 10px 10px 0 ;
+}
+.A5 .parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    background-color: #eeeeee;
+    flex-wrap: wrap;
+} 
+.A5 .parent div {
+    flex-basis: 90px;
+
+}
+.A5 .parent .one {
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #ff9800;
+    margin-top: 10px;
+    margin-left: 30%;
+    height: calc(50% - 10px);
+}
+.A5 .parent .two {
+    order: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #8bc34a;
+    margin-bottom: 10px;
+    height: calc(50% - 10px);
+}
+.A5 .parent .three {
+    order: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    color: white;
+    background-color: #795548;
+    margin: 10px 2px 0 38.5%;
+    height: calc(50% - 10px);
+}
+.A5 .parent .four {
+    order: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+    justify-self: flex-start;
+    color: white;
+    background-color: #673ab7;
+    margin: 0 40% 10px 10px;
+    height: calc(50% - 10px);
+}
+.A6 {
+    box-sizing: border-box;
+    height: 95vh;
+    width: 95vw;
+}
+.A6 .page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #eee;
+    height: 90vh;
+    width: 90vw;
+    margin: 20px auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    margin: 10px 0 0 10px;
+    display: flex;
+    justify-content: center;
+    justify-self: flex-start;
+    align-items: center;
+    align-self: flex-start;
+    background-color: var(--backg-color);
+    flex-basis: 10%;
+    padding: 15px 0;
+}
+.links {
+    display: flex;
+    background-color: var(--backg-color);
+    justify-content: flex-end;
+    flex-basis: 85%;
+    margin: 10px 10px 0 0 ;
+    padding: 15px 0;
+
+}
+.links li {
+    list-style: none;
+    padding: 0 10px;
+}
+.main-area {
+    width: 100%;
+    height: 73%;
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    margin: 0 0 0 10px ;
+    padding:10px 0 0 10px ;
+    display: flex;
+    flex-basis: 70%;
+    justify-content: flex-start;
+    align-content: flex-start;
+    background-color: var(--backg-color);
+    
+}
+.sidebar {
+    background-color: var(--backg-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-basis: 26%;
+    margin: 0 10px  0 0;
+    padding: 10px 0 0 10px;
+}
+.footer {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.footer .copyright {
+    display: flex;
+    background-color: var(--backg-color);
+    align-items: flex-start;
+    align-self: flex-start;
+    flex-basis: 70%;
+    margin: 0 0 0 10px;
+    padding: 15px;
+}
+.design {
+    flex-basis: 28%;
+    margin: 0 10px 0 0 ;
+    display: flex;
+    background-color: var(--backg-color);
+    justify-content: flex-end;
+    justify-self: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+}

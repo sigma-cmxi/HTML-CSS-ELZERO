@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 1.8rem;
+}
+hr {
+    margin: 20px auto;
+}
+.A1 div {
+    width: 300px;
+    height: 200px;
+    position: relative;
+    background-color: #eee;
+    margin: 20px auto;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #03a9f4;
+    transition-duration: .5s;
+}
+.A1 div::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #03a9f4;
+    transition-duration: .5s;
+}
+.A1 div::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #e91e63;
+    transition-duration: .5s;
+}
+.A1 div:hover:after {
+    transform: rotate(-8deg);
+}
+.A1 div:hover:before {
+    transform: rotate(8deg);
+}
+.A2 div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: black;
+    background-color: #eee;
+    margin: 20px auto;
+}
+.A2 div::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: #e91e63 8px solid;
+    border-right: #e91e63 8px solid;
+    border-bottom: #e91e63 8px solid;
+    border-left: white 8px solid;
+    transition: rotate .5s ;
+}
+.A2 div::after {
+    position: absolute;
+    content: "";
+    z-index: -2;
+    width: 216px;
+    height: 216px;
+    border-radius: 50%;
+    border-top: #03a9f4 8px solid;
+    border-right: transparent 8px solid;
+    border-bottom: #03a9f4 8px solid;
+    border-left: #03a9f4 8px solid;
+    transition: rotate .5s .5s ;
+}
+.A2 div:hover::before { 
+    rotate:360deg;
+}
+.A2 div:hover::after {
+    rotate:360deg;
+}

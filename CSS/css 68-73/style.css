@@ -1,0 +1,128 @@
+* {
+    font-family: sans-serif
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+hr {
+    margin: 20px;
+}
+.A1 h1 {
+    position: relative;
+    width: 150px;
+    background-color: #ff5722;
+    margin: 20px auto;
+    color: white;
+    text-align: center
+}
+.A1 h1::after {
+    content: "";
+    background-color: #ff5722;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skew(-30deg, -3deg);
+}
+.A1 h1::before {
+    content: "";
+    background-color: #ff5722;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transform: skew(30deg, 3deg);
+}
+.A2 h1 {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: #009688;
+    text-align: center;
+    color: white;
+    padding: 20px 20px 20px 40px;
+    margin: 20px auto;
+}
+.A2 h1::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    background-color: #009688;
+    border-right: white 3px solid;
+    transform: skewx(17deg);
+    left: -12px;
+    top: 0;
+}
+/* .A3 {
+/* 
+
+matrix(3, 0.2679, 0, 3, 20, 100);  ( scalex = 3 , skewy = 0.2 , skewx = 0 , scaley = 3 , translatex = 20 , translatey = 100 )
+}
+*/  
+.A3 div {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 100px auto;
+    background-color: #607d8b;
+    border-bottom: 5px black solid;
+}
+.A3 div::before {
+    content: "";
+    position: absolute;
+    width: 138px;
+    height: 138px;
+    border-bottom: white solid 5px;
+    border-right: white solid 5px;
+    background-color: black;
+    transform: rotate(45deg);
+    top: -71px;
+    left: 29px;
+}
+.A3 div::after {
+    position: absolute;
+    content: "Elzero";
+    padding: 6px;
+    color: white;
+    font-family: sans-serif;
+    font-size: smaller;
+    bottom: 0;
+    left: 0;
+}
+.A4 .box {
+    margin: 20px auto;
+    width: 200px ;
+    height: 200px;
+    position: relative;
+    transition:  1s;
+    transform-style: preserve-3d;
+}
+.A4 .box:hover {
+    transform: rotateY(-1800deg);
+}
+.A4 .box div {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+    backface-visibility: hidden
+}
+.A4 .box .front {
+    position: absolute;
+    background-color: #fa3664;
+}
+.A4 .box .back {
+    position: absolute;
+    background-color: #1692f4;
+    transform: rotateY(180deg);
+}

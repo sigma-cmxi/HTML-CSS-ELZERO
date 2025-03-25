@@ -1,0 +1,274 @@
+body {
+    font-family: sans-serif;
+    font-size: 70%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+hr {
+    margin: 20px 0 ;
+}
+.A1 .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px  auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: repeat(3,253px);
+    grid-template-rows: 54px auto;
+    gap: 20px;  
+}
+.A1 .grid div {
+    counter-increment: num;
+    position: relative;
+    background-color: #607d8b;
+    color: white;
+}
+.A1 .grid div::before {
+    content: "Element" " " counter(num);
+    position: absolute;
+    left: calc(50% - 60px);
+    top: calc(50% - 16.5px);
+}   
+.A2 {
+    width: 100vw;
+    height: 100vh;
+}
+.A2 .layout {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    font-size: 1.8rem;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 10% auto 10%;
+    grid-template-areas: 
+    "header header"
+    "section aside"
+    "footer footer"
+    ;
+}
+.A2 .layout header {
+    position: relative;
+    grid-area: header;
+    background-color: #03a9f4;
+}
+.A2 .layout header::after {
+    content: "Header";
+    color: white;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 2%;
+}
+.A2 .layout section {
+    position: relative;
+    grid-area: section;
+    background-color: #ff5722;
+}
+.A2 .layout section::after {
+    content: "Section";
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 2%;
+}
+.A2 .layout aside {
+    position: relative;
+    grid-area: aside;
+    background-color: #607d8b;
+}
+.A2 .layout aside::after {
+    content: "Aside";
+    color: white;
+    position: absolute;
+    top: 5%;
+    left: 8%;
+}
+.A2 .layout footer {
+    position: relative;
+    grid-area: footer;
+    background-color: #009688;
+}
+.A2 .layout footer::after {
+    content: "Footer";
+    color: white;
+    position: absolute;
+    top: calc(50% - 16px);
+    left: 2%;
+}
+.A3 .grid {
+    display: grid;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    margin: 20px auto;
+    font-size: 1.8rem;
+    font-weight: bold;
+    gap: 20px;
+    grid-template-columns: 21px auto auto 21px;
+    grid-template-rows: auto 10%;
+}
+.A3 .grid div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #403f3f;
+    color: white;
+}
+.A4 .grid {
+    display: grid;
+    margin: 20px auto;
+    background-color: #ddd;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+    gap: 20px;
+    grid-template-columns: repeat(3 ,auto);
+    grid-template-areas: 
+    "eight eight eight"
+    "two two three"
+    "four five five"
+    "six five five"
+    "seven five five"
+    "one one one";
+}
+.A4 .grid div {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background-color: #2196f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.A4 .grid .one {
+    grid-area: one;
+}
+.A4 .grid .two {
+    grid-area: two;
+}
+.A4 .grid .three {
+    grid-area: three;
+}
+.A4 .grid .four {
+    grid-area: four;
+}
+.A4 .grid .five {
+    grid-area: five;
+}
+.A4 .grid .six {
+    grid-area: six;
+}
+.A4 .grid .seven {
+    grid-area: seven;
+}
+.A4 .grid .eight {
+    grid-area: eight;
+}
+.A5 .grid {
+    display: grid;
+    margin: 20px auto;
+    background-color: #ddd;
+    grid-template-columns: repeat(2 ,auto);
+    grid-template-rows: auto auto;
+    column-gap: 20px;
+    align-content: space-between;
+    padding: 20px;
+    width: 800px;
+    height: 400px;
+}
+.A5 .grid div {
+    background-color: #e91e63;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.A6 {
+    background-color: #eeeeee63;
+    box-sizing: border-box;
+    max-height: 100vh;
+    
+}
+.A6 .forms {
+    background-color: #ddd;
+    display: grid;
+    gap: 10px;
+    margin: 20px auto;
+    width: 800PX;
+    height: fit-content;
+    padding: 20px;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-template-rows : repeat(4 ,1fr);
+    grid-template-areas: 
+    "f1 f1 f2 f3 "
+    "f4 f5 f5 f3"
+    "f4 f6 f6 f3" 
+    "f7 f8 f9 f10";
+}
+.A6 .forms div {
+    background-color: white;
+    padding: 0px 15px;
+    border-bottom: 3px solid #ff450b;
+}
+.A6 .forms div h3 {
+    margin: 15px 10px 5px 0;
+}
+.A6 .forms div span {
+    color: #aeaeae;
+    font-weight: bold;
+}
+.A6 .forms div p:first-of-type {
+    color: black;
+    font-weight: bold;
+}
+.A6 .forms .f1 {
+    grid-area: f1;
+}
+.A6 .forms .f2 {
+    grid-area: f2;
+}
+.A6 .forms .f3 {
+    grid-area: f3;
+    background-color: black;
+    color: white;
+}
+.A6 .forms .f3 p:first-of-type {
+    color: white;
+}
+.A6 .forms .f4 {
+    grid-area: f4;
+}
+.A6 .forms .f5 {
+    grid-area: f5;
+    background-color: black;
+    color: white;
+}
+.A6 .forms .f5 p:first-of-type {
+    color: white;
+}
+.A6 .forms .f6 {
+    grid-area: f6;
+}
+.A6 .forms .f7 {
+    grid-area: f7;
+}
+.A6 .forms .f8 {
+    grid-area: f8;
+    background-color: black;
+    color: white;
+}
+.A6 .forms .f8 p:first-of-type {
+    color: white;
+}
+.A6 .forms .f9 {
+    grid-area: f9;
+}
+.A6 .forms .f10 {
+    grid-area: f10;
+}

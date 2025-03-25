@@ -1,0 +1,21 @@
+.parent .child .title {
+    color: red;
+}
+.parent span {
+    color: blue;
+}
+div.title,div.parent p {
+    color: green;
+}
+hr {
+    margin: 20px 0;
+}
+.assiment2 div {
+    background-color: red;
+    margin: 20px;
+    padding: 10px;
+    max-width: 400px;
+    width: fit-content;
+    max-height: 100px;
+    overflow: hidden;
+}

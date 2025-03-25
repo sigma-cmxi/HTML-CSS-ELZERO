@@ -1,0 +1,98 @@
+hr {
+    margin: 20px 0;
+}
+.A1 {
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+.A1 div {
+    background-color: #eeeeee;
+    text-align: center;
+    line-height: 60px;
+    margin: 20px auto;
+    width: 300px;
+    height: 60px;
+    color: black;
+    padding: 10px 30px;
+}
+.A1 :empty {
+    background-color: red;
+}
+.A2 div {
+    position: relative;
+    margin: auto;
+    background-color: #d4d4d4;
+    color: black;
+    padding: 20px 25px  20px 5px;
+    font-family: sans-serif;
+    width: fit-content;
+}
+.A2 div::first-letter {
+    opacity: 0;
+}
+.A2 div::before { 
+    content: "1";
+    display: inline-block;
+    position: absolute;
+    top: 10%;   
+    left: -18.5px;
+    background-color: red;
+    color: white;
+    padding: 15px 10px;
+}
+.A3 p {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    width: 350px;
+    background-color: #efefef;
+    font-family: sans-serif;
+    padding: 15px 40px 15px 10px;
+    border-left: #e91e63 5px solid;
+}
+.A3 p::after {
+    content: "";
+    position: absolute;
+    left: -23px;
+    top: calc(50% - 9.6px);
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #e91e63 transparent transparent;
+}
+.A3 p::before {
+    content: attr(data-person);
+    position: absolute;
+    font-family: sans-serif;
+    top: calc(50% - 19.1px);
+    left: -100px;
+    background-color: #dddddd;
+    padding: 10px;
+}
+.A4 p {
+    counter-increment: numbers;
+    position: relative;
+    width: 350px;
+    background-color: #eeeeee;
+    color: black;
+    padding: 15px;
+    margin: 10px auto;
+    font-family: sans-serif;
+    border-right: solid 5px #f44336;
+}
+.A4 p::before {
+    position: absolute;
+    content: counter(numbers);
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    background-color: #f44336;
+    padding: 15px 20px;
+    top: 0;
+    left:calc(0% - 50px);
+}

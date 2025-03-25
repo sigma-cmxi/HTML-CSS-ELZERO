@@ -1,0 +1,167 @@
+hr {
+    margin: 20px 20px;
+}
+.A1 {
+    margin: 30px 20px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.A1 div {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.A1 .red {
+    z-index: 4;
+    background-color: #f44336;
+    top: 10px;
+    left: 20px;
+
+}
+.A1 .green {
+    z-index: 3;
+    background-color: #009688;
+    left: 10px;
+}
+.A1 .blue {
+    z-index: 2;
+    background-color: #03a9f4;
+    bottom: 10px;
+}
+.A1 .black {
+    z-index: 1;
+    background-color: #333333;
+}
+.A2 div {
+    background-color: #eeeeee;
+    width: 400px;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+    border-top: #f34639 2px solid;
+    border-bottom: #f34639 2px solid;
+    border-left: #2698f2 2px solid;
+    border-right: #2698f2 2px solid;
+}
+.A2 span {
+    position: absolute;
+    font-family: sans-serif;
+    padding: 3px 12px;
+    color: white;
+    background-color: #2196f3;
+}
+.A2 .top-left {
+    top: -12.2px;
+    left: -16.45px;
+    border-right: #ec463c 2px solid;
+}
+.A2 .top-right {
+    top: -12.2px;
+    right: -16.45px;
+    border-left: #ec463c 2px solid;
+}
+.A2 .bottom-left {
+    bottom: -12.2px;
+    left: -16.45px;
+    border-right: #ec463c 2px solid;
+}
+.A2 .bottom-right {
+    bottom: -12.2px;
+    right: -16.45px;
+    border-left: #ec463c 2px solid;
+}
+.A3 .main {
+    width: 400px;
+    margin: auto;
+}
+.A3 .nostyle {
+    list-style: none;
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+    padding: 15px 20px 1px 18px;
+    font-family: sans-serif;
+}
+.A3 .ht {
+    list-style-type: decimal;
+    background-color: #eeeeee;
+    padding: 10px 10px 7px 20px;
+
+}
+.A3 .ht li {
+    margin-bottom:10px ;
+    width: 100%;
+    list-style-position: outside;
+    background-color: white;
+    padding: 8px;
+}
+.A3 .cs {
+    list-style-type: decimal;
+    background-color: #eeeeee;
+    padding: 10px 10px 7px 20px;
+}
+.A3 .cs li {
+    margin-bottom:10px ;
+    width: 100%;
+    list-style-position: outside;
+    list-style: upper-roman;
+    background-color: white;
+    padding: 8px;
+}
+.A3 .js {
+    list-style-type: decimal;
+    background-color: #eeeeee;
+    padding: 10px 8px 10px 1px;
+}
+.A3 .js li {
+    margin-bottom:10px ;
+    width: 100%;
+    list-style: circle;
+    list-style-position: inside;
+    background-color: white;
+    padding: 8px ;
+}
+#jsno {
+    padding: 10px 20px 1px 10px;
+}
+table {
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+table thead td {
+    border: 0px rgb(205, 201, 201) solid;
+    color: white;
+    padding: 15px 25px;
+    background-color: #333333;
+    font-weight: bold;
+}
+img {
+width: 60px;
+height: 60px;
+border: white 3px solid;
+}
+.nm {
+    padding: 10px 50px;
+    
+
+}
+.ct {
+    padding: 10px 40px;
+}
+table tbody td {
+    background-color: #eeeeee; 
+    padding: 25px;
+}
+table tbody td button {
+    background-color: #03a9f4;
+    padding: 3px 10px;
+    border: #03a9f4 1px solid;
+    color: white;
+    font-weight: bold;
+    font-size: x-small;
+}
+.dl {
+    background-color: #e91e63;
+    border: #e91e63 1px solid;
+}
